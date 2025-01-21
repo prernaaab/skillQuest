@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Learning Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="games.html">Games</a>
+            <a href="profile.html">Profile</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Welcome to Python Learning Games</h1>
+        <p>Our platform helps you learn Python programming through interactive games. Sign up or log in to start playing!</p>
+
+        <!-- Buttons to trigger login and signup popups -->
+        <button class="popup-trigger" onclick="openPopup('login')">Login</button>
+        <button class="popup-trigger" onclick="openPopup('signup')">Signup</button>
+
+        <!-- Login Popup -->
+        <div id="login-popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>Login</h2>
+                <form action="/login" method="POST">
+                    <label for="login-username">Username:</label>
+                    <input type="text" id="login-username" name="username" required>
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+                    <button class="button" type="submit">Login</button>
+                </form>
+                <p>Don't have an account? <a class="link" href="#" onclick="switchForm('signup')">Sign up here</a></p>
+            </div>
+        </div>
+
+        <!-- Signup Popup -->
+        <div id="signup-popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <h2>Signup</h2>
+                <form action="/signup" method="POST">
+                    <label for="signup-username">Username:</label>
+                    <input type="text" id="signup-username" name="username" required>
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="password" required>
+                    <button class="button" type="submit">Signup</button>
+                </form>
+                <p>Already have an account? <a class="link" href="#" onclick="switchForm('login')">Log in here</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Python Learning Games. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

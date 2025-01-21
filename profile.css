@@ -1,0 +1,168 @@
+/* Universal Styles */
+body {
+    background-color: #0c0e14;
+    font-family: 'Poppins', sans-serif;
+    color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: #2e2e2e;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffcc00;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/*
+header nav {
+    background-color: #2e2e2e;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #f3ef29;
+} */
+
+.precontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f8ff97;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+    color: #000000;
+}
+
+/* Badges Section */
+.badges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.badge-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.badge {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.badge img {
+    width: 60px;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+    background-color: #ff983f;
+    cursor: pointer;
+}
+
+/* Games Progress Section */
+.games-progress {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.games-played, .levels-completed {
+    background-color: #ffef75;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+    text-align: center;
+}
+
+.games-played p {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.levels-completed .tally-marks {
+    font-size: 2rem;
+    color: #ff7700;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    color: #b4b4b4;
+    text-align: center;
+}
+
+#username {
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
